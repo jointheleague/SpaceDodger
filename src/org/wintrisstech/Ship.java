@@ -5,12 +5,12 @@ import java.awt.Graphics2D;
 
 class Ship {
     
-    private int x = SpaceGame.windowWidth/2;
-    private int y = SpaceGame.windowWidth/2;
+    public int x = SpaceDodger.windowWidth/2;
+    public int y = SpaceDodger.windowWidth/2;
     private double vx = 0;
     private double vy = 0;
-    private int w = 20;
-    private int h = 20;
+    public int w = 20;
+    public int h = 20;
     private double heading = 2*Math.PI * 3/4;
     private double impulse = 30;
     private double maxSpeed = 50;
@@ -50,16 +50,16 @@ class Ship {
         x += vx;
         y += vy;
         while (x < 0) {
-            x += SpaceGame.windowWidth;
+            x += SpaceDodger.windowWidth;
         }
-        while (x > SpaceGame.windowWidth) {
-            x -= SpaceGame.windowWidth;
+        while (x > SpaceDodger.windowWidth) {
+            x -= SpaceDodger.windowWidth;
         }
         while (y < 0) {
-            y += SpaceGame.windowHeight;
+            y += SpaceDodger.windowHeight;
         }
-        while (y > SpaceGame.windowHeight) {
-            y -= SpaceGame.windowHeight;
+        while (y > SpaceDodger.windowHeight) {
+            y -= SpaceDodger.windowHeight;
         }
             
         // Make the ship slow down over time

@@ -9,7 +9,7 @@ class Background {
 
     void paint(Graphics2D g2) {
         g2.setColor(spaceColor);
-        g2.fillRect(0, 0, SpaceGame.windowWidth, SpaceGame.windowHeight);
+        g2.fillRect(0, 0, SpaceDodger.windowWidth, SpaceDodger.windowHeight);
     }
     
 }
